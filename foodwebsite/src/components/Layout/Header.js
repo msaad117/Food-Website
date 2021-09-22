@@ -1,5 +1,6 @@
 import { Fragment } from "react";
 
+import HeaderCardButton from './HeaderCardButton'
 import Meals from '../../assets/meals.jpg'
 import classes from './Header.module.css'
 
@@ -9,7 +10,7 @@ const Header = () => {
     <header className={classes.header}>
         
     <h1>ReactMeals</h1>
-    <button >Cart</button>
+    <HeaderCardButton/>
        
     </header>
     <div className={classes['main-image']}>
@@ -18,5 +19,6 @@ const Header = () => {
 </Fragment>
     );
 
-};
-export default Header
+    }
+
+    export default Header
